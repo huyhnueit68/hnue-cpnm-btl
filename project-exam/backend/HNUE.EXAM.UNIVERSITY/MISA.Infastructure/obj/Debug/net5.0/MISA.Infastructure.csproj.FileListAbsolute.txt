@@ -1,0 +1,17 @@
+D:\HK7\CNPM\hnue-cpnm-btl\project-exam\backend\HNUE.EXAM.UNIVERSITY\MISA.Infastructure\bin\Debug\net5.0\MISA.Infastructure.deps.json
+D:\HK7\CNPM\hnue-cpnm-btl\project-exam\backend\HNUE.EXAM.UNIVERSITY\MISA.Infastructure\bin\Debug\net5.0\MISA.Infastructure.dll
+D:\HK7\CNPM\hnue-cpnm-btl\project-exam\backend\HNUE.EXAM.UNIVERSITY\MISA.Infastructure\bin\Debug\net5.0\ref\MISA.Infastructure.dll
+D:\HK7\CNPM\hnue-cpnm-btl\project-exam\backend\HNUE.EXAM.UNIVERSITY\MISA.Infastructure\bin\Debug\net5.0\MISA.Infastructure.pdb
+D:\HK7\CNPM\hnue-cpnm-btl\project-exam\backend\HNUE.EXAM.UNIVERSITY\MISA.Infastructure\bin\Debug\net5.0\MISA.ApplicationCore.dll
+D:\HK7\CNPM\hnue-cpnm-btl\project-exam\backend\HNUE.EXAM.UNIVERSITY\MISA.Infastructure\bin\Debug\net5.0\MISA.ApplicationCore.pdb
+D:\HK7\CNPM\hnue-cpnm-btl\project-exam\backend\HNUE.EXAM.UNIVERSITY\MISA.Infastructure\obj\Debug\net5.0\MISA.Infastructure.csproj.AssemblyReference.cache
+D:\HK7\CNPM\hnue-cpnm-btl\project-exam\backend\HNUE.EXAM.UNIVERSITY\MISA.Infastructure\obj\Debug\net5.0\MISA.Infastructure.Properties.Resources.resources
+D:\HK7\CNPM\hnue-cpnm-btl\project-exam\backend\HNUE.EXAM.UNIVERSITY\MISA.Infastructure\obj\Debug\net5.0\MISA.Infastructure.csproj.GenerateResource.cache
+D:\HK7\CNPM\hnue-cpnm-btl\project-exam\backend\HNUE.EXAM.UNIVERSITY\MISA.Infastructure\obj\Debug\net5.0\MISA.Infastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\HK7\CNPM\hnue-cpnm-btl\project-exam\backend\HNUE.EXAM.UNIVERSITY\MISA.Infastructure\obj\Debug\net5.0\MISA.Infastructure.AssemblyInfoInputs.cache
+D:\HK7\CNPM\hnue-cpnm-btl\project-exam\backend\HNUE.EXAM.UNIVERSITY\MISA.Infastructure\obj\Debug\net5.0\MISA.Infastructure.AssemblyInfo.cs
+D:\HK7\CNPM\hnue-cpnm-btl\project-exam\backend\HNUE.EXAM.UNIVERSITY\MISA.Infastructure\obj\Debug\net5.0\MISA.Infastructure.csproj.CoreCompileInputs.cache
+D:\HK7\CNPM\hnue-cpnm-btl\project-exam\backend\HNUE.EXAM.UNIVERSITY\MISA.Infastructure\obj\Debug\net5.0\MISA.Infastructure.csproj.CopyComplete
+D:\HK7\CNPM\hnue-cpnm-btl\project-exam\backend\HNUE.EXAM.UNIVERSITY\MISA.Infastructure\obj\Debug\net5.0\MISA.Infastructure.dll
+D:\HK7\CNPM\hnue-cpnm-btl\project-exam\backend\HNUE.EXAM.UNIVERSITY\MISA.Infastructure\obj\Debug\net5.0\ref\MISA.Infastructure.dll
+D:\HK7\CNPM\hnue-cpnm-btl\project-exam\backend\HNUE.EXAM.UNIVERSITY\MISA.Infastructure\obj\Debug\net5.0\MISA.Infastructure.pdb

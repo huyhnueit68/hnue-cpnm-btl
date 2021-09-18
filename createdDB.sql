@@ -18,16 +18,38 @@ CREATE TABLE Users (
     address VARCHAR(255),
     total_point FLOAT,
     description VARCHAR(255),
+    role INT NOT NULL, 
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP()
+);
+
+CREATE TABLE ListQuestion(
+    question_id INT AUTO_INCREMENT PRIMARY KEY,
+    subject_id INT NOT NULL,
+    class VARCHAR(255),
+    chapter VARCHAR(255),
+    level INT,
+    point FLOAT,
+    question VARCHAR(255) NOT NULL,
+    answer VARCHAR(255) NOT NULL,
+    type_answer INT NOT NULL,
+    FOREIGN KEY (subject_id)
+        REFERENCES Subject(subject_id)
+        ON DELETE CASCADE,
+    level INT,
+    description VARCHAR(255),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP()
 );
 
 CREATE TABLE TestKit(
-    testkit_id INT AUTO_INCREMENT PRIMARY KEY,
-    subject_id INT NOT NULL,
+    testkit_id INT AUTO_INCREMENT,
     time_limit INT NOT NULL,
     question_id INT NOT NULL,
     description VARCHAR(255),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP()
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP(),
+    PRIMARY KEY(testkit_id, question_id),
+    FOREIGN KEY (question_id)
+        REFERENCES ListQuestion(question_id)
+        ON DELETE CASCADE
 );
 
 CREATE TABLE ExamHistory (
@@ -45,17 +67,5 @@ CREATE TABLE ExamHistory (
     FOREIGN KEY (user_id)
         REFERENCES Users(entity_id)
         ON DELETE CASCADE,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP()
-);
-
-CREATE TABLE ListQuestion(
-    question_id INT AUTO_INCREMENT PRIMARY KEY,
-    question VARCHAR(255) NOT NULL,
-    answer VARCHAR(255) NOT NULL,
-    subject_id INT NOT NULL,
-    FOREIGN KEY (subject_id)
-        REFERENCES Subject(subject_id)
-        ON DELETE CASCADE,
-    level INT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP()
 );
