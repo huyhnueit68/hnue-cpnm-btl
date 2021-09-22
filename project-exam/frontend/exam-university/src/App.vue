@@ -109,11 +109,11 @@ export default {
         //   m_title: "Tổng hợp",
         //   m_router: "/synthetic",
         // },
-        // {
-        //   c_icon: "icon-budget",
-        //   m_title: "Ngân sách",
-        //   m_router: "/budget",
-        // },
+        {
+          c_icon: "icon-budget",
+          m_title: "Bảng điểm và Bảng xếp hạng",
+          m_router: "/budget",
+        },
         {
           c_icon: "icon-report",
           m_title: "Thống kê",

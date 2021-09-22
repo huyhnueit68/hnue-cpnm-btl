@@ -107,6 +107,14 @@
   position: relative;
   display: flex;
   cursor: pointer;
+
+}
+
+.items-box-content .navbar-items-title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 129px;
 }
 
 .navbar-items .navbar-items-icon {
