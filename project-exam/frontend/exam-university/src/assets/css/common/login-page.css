@@ -1,0 +1,217 @@
+.login-page {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../img/bg1.jpg);
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.login-page .login-page__lang {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    width: 120px;
+    height: 32px;
+    z-index: 99;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, .1);
+    border: 1px solid rgba(255, 255, 255, .1);
+    line-height: 32px;
+    color: #f8f8f8;
+    cursor: pointer;
+}
+
+.login-page .login-page__lang:hover {
+    background: rgba(255, 255, 255, 0.479);
+}
+
+.login-page .login-page__lang .lang__box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-box {
+    width: 21px;
+    height: 16px;
+}
+
+.icon-vn {
+    width: 100%;
+    height: 100%;
+    background: url(../../icon/icon-vi.svg) no-repeat;
+
+}
+
+.title-lang {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-page__box-login {
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 48px 40px 48px;
+    min-height: 400px;
+    background: #fff;
+    position: relative;
+    box-shadow: 0 12px 20px rgb(0 0 0 / 12%);
+}
+
+.login-page__box-login .box-login-container {
+    width: 100%;
+    height: 100%;
+}
+
+.login-page__box-login .box-login-container .login-page-container {
+    width: 100%;
+    height: 100%;
+}
+
+.box-login--title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 24px;
+}
+
+.box-login--logo {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-hnue-custom {
+    width: 52px;
+    height: 52px;
+}
+
+.logo-hnue {
+    width: 100%;
+    height: 100%;
+    background: url('../../img/logo\ trường.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box-login--title-icon {
+    font-weight: 900;
+    font-size: 19px;
+    margin-left: 5px;
+}
+
+.box-login--input-pass,
+.box-login--input-user {
+    position: relative;
+    margin-bottom: 12px;
+    width: 304px;
+    height: 48px;
+}
+
+.box-login--input-pass .password,
+.box-login--input-user .username {
+    font-size: 16px;
+    color: #212121;
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    height: 48px;
+    border: 1px solid #e0e5e9;
+    background: transparent;
+    padding: 14px 16px 15px 16px;
+    border-radius: 3px;
+}
+
+.box-login--forgot {
+    display: flex;
+    width: 304px;
+    height: 41px;
+}
+
+.forgot-password {
+    font-size: 15px;
+    color: #0073e6;
+    line-height: 17px;
+    margin-top: 0;
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    margin-bottom: 24px;
+}
+
+.box-login--input-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-login--input-login .login-form-btn {
+    position: relative;
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+    line-height: 48px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    height: 48px;
+    border-radius: 3px;
+    background: #0073e6;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+}
+
+.box-login--register {
+    display: inline-flex;
+    width: 100%;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.box-login--register .register {
+    font-size: 14px;
+    color: #0073e6;
+    line-height: 17px;
+    margin-left: 8px;
+    display: block;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.username::placeholder,
+.password::placeholder {
+    font-family: "NotoSans-regular";
+    font-size: 16px;
+    color: #bbb;
+}
+
+.copy-right-text{
+    position: absolute;
+    bottom: 200px;
+    color: #fff;
+
+}

@@ -1,31 +1,42 @@
 <template>
   <div id="app">
-    <!-- init main amit web 
-    with 3 main component -->
     <!-- init component nav bar for display menu items -->
-    <NavBar ref="navBar" :navbarItems="navbarItems" @setToogleIcon="setToogleIcon"/>
+    <NavBar
+      v-if="this.$store.state.isLogin"
+      ref="navBar"
+      :navbarItems="navbarItems"
+      @setToogleIcon="setToogleIcon"
+    />
     <!-- Display main -->
-    <TheMain ref="main" @setNavbarMenu="setNavbarMenu"/>
+    <TheMain
+      v-if="this.$store.state.isLogin"
+      ref="main"
+      @setNavbarMenu="setNavbarMenu"
+    />
+    <!-- init main amit web with 3 main component -->
+    <Login v-if="!this.$store.state.isLogin" />
   </div>
 </template>
- 
-<script>
-import NavBar from './components/layout/TheNavBar.vue'
-import TheMain from './components/layout/TheMain.vue'
-import Vue from 'vue'
-import Vuex from 'vuex'
-import VTooltip from 'v-tooltip'
-import { useWindowSize } from 'vue-window-size';
-import Enumeration from './js/common/Enumeration'
 
-Vue.use(VTooltip)
-Vue.use(Vuex)
+<script>
+import NavBar from "./components/layout/TheNavBar.vue";
+import TheMain from "./components/layout/TheMain.vue";
+import Vue from "vue";
+import Vuex from "vuex";
+import VTooltip from "v-tooltip";
+import { useWindowSize } from "vue-window-size";
+import Enumeration from "./js/common/Enumeration";
+import Login from "./components/common/Login";
+
+Vue.use(VTooltip);
+Vue.use(Vuex);
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     NavBar,
-    TheMain
+    TheMain,
+    Login,
   },
   setup() {
     const { width, height } = useWindowSize();
@@ -34,14 +45,23 @@ export default {
       windowHeight: height,
     };
   },
-  watch:{
-    windowWidth: function(val){
-      if(val <= Enumeration.WindowSize.Width || this.windowHeight <= Enumeration.WindowSize.Height){
+  created() {
+    this.CheckSessionLogin();
+  },
+  watch: {
+    windowWidth: function(val) {
+      if (
+        val <= Enumeration.WindowSize.Width ||
+        this.windowHeight <= Enumeration.WindowSize.Height
+      ) {
         this.$store.state.toogleMenu = false;
       }
     },
-    windowHeight: function(val){
-      if(val <= Enumeration.WindowSize.Height || this.windowWidth <= Enumeration.WindowSize.Height){
+    windowHeight: function(val) {
+      if (
+        val <= Enumeration.WindowSize.Height ||
+        this.windowWidth <= Enumeration.WindowSize.Height
+      ) {
         this.$store.state.toogleMenu = false;
       }
     },
@@ -123,31 +143,38 @@ export default {
           c_icon: "icon-analysis",
           m_title: "Liên hệ",
           m_router: "/analysis",
-        }
+        },
       ],
-    }
+    };
   },
-  methods:{
+  methods: {
     /**
      * Function set navbar menu
      * CreatedBy:  PQ Huy (19.07.2021)
      */
-    setNavbarMenu(){
+    setNavbarMenu() {
       this.$refs.navBar.setNavbarMenu();
     },
     /**
      * Fucntion set show toogle icon
      * CreatedBy:  PQ.Huy(19.07.2021)
      */
-    setToogleIcon(isShow){
+    setToogleIcon(isShow) {
       this.$refs.main.setToogleIcon(isShow);
-    }
-  }
-}
-
+    },
+    /**
+     * Function check session login status
+     * CreatedBy: PQ Huy (27.09.2021)
+     */
+    CheckSessionLogin() {
+      // debugger // eslint-disable-line no-debugger
+      this.$store.state.isLogin;
+    },
+  },
+};
 </script>
 
 <style>
-  @import url("./assets/css/common/main.css");
-  @import url("./assets/css/common/tooltip.css");
+@import url("./assets/css/common/main.css");
+@import url("./assets/css/common/tooltip.css");
 </style>

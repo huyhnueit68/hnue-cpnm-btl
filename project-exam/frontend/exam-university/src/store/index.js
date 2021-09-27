@@ -42,6 +42,10 @@ export default new Vuex.Store({
          * Toogle menu
          */
         toogleMenu: true,
+        /**
+         * login status
+         */
+        isLogin: false,
     },
     mutations: {
         /**
